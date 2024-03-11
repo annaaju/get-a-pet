@@ -3,13 +3,13 @@ import Input from '../../form/Input'
 import styles from '../../form/Form.module.css'
 import { Link } from 'react-router-dom'
 import { useContext, useState } from 'react'
-import { UserProvider } from '../../../context/UserContext'
+import { Context, UserProvider } from '../../../context/UserContext'
 
 
 const Register = () => {
 
   const[user, setUser] = useState({})
-  const {register} = useContext()
+  const {register} = useContext(Context)
     
   function handleChange(e){
     setUser({...user, [e.target.name]: e.target.value})
