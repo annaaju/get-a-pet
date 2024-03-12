@@ -95,7 +95,7 @@ module.exports = class userController {
            return
         }
 
-        await createUserToken(user, req, res)
+        await createUserToken(userExists, req, res)
 
     }
 
@@ -110,7 +110,9 @@ module.exports = class userController {
 
             currentUser = await User.findById(decoded.id)
 
-            currentUser.password = undefined
+            if (currentUser) {
+                currentUser.password = undefined
+            }
 
         }else{
             currentUser = null
