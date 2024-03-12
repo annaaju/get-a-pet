@@ -89,7 +89,7 @@ module.exports = class userController {
          }
 
          //check if password match with db password
-         const checkPassword = await bcrypt.compare(password, User.password)
+         const checkPassword = await bcrypt.compare(password, userExists.password)
          if(!checkPassword){
             res.status(422).json({message: 'Senha inválida!'})
            return
