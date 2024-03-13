@@ -39,3 +39,17 @@
 .form_container p a:hover{
     color: #16489db4;
 }
+
+/*PET FORMS*/
+
+.preview_pet_images{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.preview_pet_images img{
+    width: 100px;
+    height: 100px;
+    margin-left: 1em;
+}
