@@ -1,0 +1,84 @@
+.petlist_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.petlist_header h1{
+    margin: 0;
+}
+
+.petlist_header a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #16479d;
+    color: #FFF;
+    cursor: pointer;
+    transition: .4s;
+    padding: .5em .8em;
+    border-radius: 8px;
+    border: 2px solid #16479d;
+}
+
+.petlist_header a:hover{
+    background-color: transparent;
+    color: #16479d;
+    transform: scale(1.02);
+}
+
+.petlist_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.petlist_row{
+    border-bottom: 1px solid #16479d;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.petlist_row img{
+    margin-right: 1em;
+}
+
+.petlist_row span{
+    min-width: 100px;
+}
+
+.actions{
+    margin-left: auto;
+}
+
+.actions a, .actions button{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #fff;
+    color: #16479d;
+    cursor: pointer;
+    transition: .4s;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #16479d;
+    font-size: 13px;
+    margin-left: 1em;
+}
+
+.actions a:hover, .actions button:hover{
+    background-color: #16479d;
+    color: #fff;
+    transform: scale(1.02);
+}
+
+.actions .conclude.btn{
+    color: #25B456;
+    border-color: #25B456;
+}
+
+.actions .conclude.btn:hover{
+    color: #fff;
+    background-color: #25B456;
+}
